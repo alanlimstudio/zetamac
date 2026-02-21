@@ -262,7 +262,16 @@ function Game({ settings, onFinish }) {
       h(
         'form',
         { onSubmit: handleSubmit },
-        h('input', { className: 'answer-input', ref: inputRef, inputMode: 'numeric', onInput: handleInput })
+        h('input', {
+          className: 'answer-input',
+          ref: inputRef,
+          type: 'tel',
+          inputMode: 'numeric',
+          pattern: '[0-9]*',
+          autoComplete: 'off',
+          enterKeyHint: 'done',
+          onInput: handleInput,
+        })
       )
     ),
     h('div', { className: 'game-footer' })

@@ -158,6 +158,25 @@ button:active {
   min-height: 40vh;
 }
 
+@media (max-width: 640px) {
+  .game-wrap {
+    grid-template-rows: auto auto 1fr;
+  }
+
+  .question-bar {
+    justify-content: center;
+    padding: 18px 12px 24px;
+  }
+
+  .game-footer {
+    min-height: calc(30vh + env(safe-area-inset-bottom));
+  }
+
+  .answer-input {
+    width: 140px;
+  }
+}
+
 .results-wrap {
   min-height: 100vh;
   display: grid;
