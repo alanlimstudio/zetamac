@@ -394,15 +394,19 @@ function Results({
       error ? h("div", { className: "notice" }, error) : null,
       h("h3", { className: "leader-title" }, "Leaderboard"),
       h(
-        "ol",
-        { className: "leaderboard" },
-        leaderboard.map((row, idx) =>
-          h(
-            "li",
-            { key: row.id || idx, className: "leader-row" },
-            h("span", { className: "leader-rank" }, idx + 1),
-            h("span", { className: "leader-name" }, row.name || "Anonymous"),
-            h("span", { className: "leader-score" }, row.score)
+        "table",
+        { className: "leaderboard-table" },
+        h(
+          "tbody",
+          null,
+          leaderboard.map((row, idx) =>
+            h(
+              "tr",
+              { key: row.id || idx },
+              h("td", { className: "leader-rank" }, idx + 1),
+              h("td", { className: "leader-name" }, row.name || "Anonymous"),
+              h("td", { className: "leader-score" }, row.score)
+            )
           )
         )
       ),

@@ -216,22 +216,18 @@ button:active {
   font-size: 16px;
 }
 
-.leaderboard {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 6px;
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 14px;
 }
 
-.leader-row {
-  display: grid;
-  grid-template-columns: 22px 1fr 44px;
-  gap: 8px;
+.leaderboard-table td {
+  padding: 2px 4px;
 }
 
 .leader-rank {
+  width: 22px;
   color: #555;
 }
 
@@ -242,6 +238,7 @@ button:active {
 }
 
 .leader-score {
+  width: 44px;
   font-weight: 600;
   text-align: right;
 }
