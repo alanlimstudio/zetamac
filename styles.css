@@ -218,7 +218,8 @@ button:active {
 
 .leaderboard {
   margin: 0;
-  padding-left: 18px;
+  padding: 0;
+  list-style: none;
   display: grid;
   gap: 6px;
   font-size: 14px;
@@ -226,7 +227,7 @@ button:active {
 
 .leader-row {
   display: grid;
-  grid-template-columns: 22px 1fr auto;
+  grid-template-columns: 22px 1fr 44px;
   gap: 8px;
 }
 
@@ -242,6 +243,7 @@ button:active {
 
 .leader-score {
   font-weight: 600;
+  text-align: right;
 }
 
 .results-actions {
