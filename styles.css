@@ -196,6 +196,54 @@ button:active {
   font-size: 20px;
 }
 
+.score-form {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 10px;
+}
+
+.name-input {
+  height: 28px;
+  border: 1px solid var(--border);
+  padding: 2px 6px;
+  font-size: 13px;
+}
+
+.leader-title {
+  margin: 14px 0 6px;
+  font-size: 16px;
+}
+
+.leaderboard {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.leader-row {
+  display: grid;
+  grid-template-columns: 22px 1fr auto;
+  gap: 8px;
+}
+
+.leader-rank {
+  color: #555;
+}
+
+.leader-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leader-score {
+  font-weight: 600;
+}
+
 .results-actions {
   display: flex;
   justify-content: flex-end;
